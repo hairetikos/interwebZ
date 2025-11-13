@@ -8,7 +8,7 @@ this is the concept.  concept coded, not a vibe.  a concept.
 
 ## 🎯 Concept Overview
 
-**interwebZ** bridges the gap between traditional web browsing and the Zclassic blockchain ecosystem. By connecting directly to a local Zclassic full node via RPC (Remote Procedure Call), the extension empowers users to interact with decentralized applications (Z-apps), participate in privacy-preserving DeFi (Z-fi), play blockchain-based games, and authenticate on Web Z sites - all while maintaining the privacy guarantees provided by Zclassic's advanced cryptographic technology.
+**interwebZ** bridges the gap between traditional web browsing and the Zclassic blockchain ecosystem. By connecting directly to a local Zclassic full node via RPC (Remote Procedure Call), the extension empowers users to interact with decentralized applications (Z-apps), decentralized Z-exchanges (D-ZEX), participate in privacy-preserving DeFi (Z-fi), play blockchain-based games, and authenticate on Web Z sites - all while maintaining the privacy guarantees provided by Zclassic's advanced cryptographic technology.
 
 ## 🔐 Zclassic & zk-SNARK Technology
 
