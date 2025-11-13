@@ -67,8 +67,8 @@ Zclassic is a privacy-focused cryptocurrency that inherits the powerful **zk-SNA
 │  │  - User Interface                  │  │
 │  │  - Key Management                  │  │
 │  │  - Transaction Signing             │  │
-│  └───────────────┬───────────────────┘  │
-│                  │                       │
+│  └───────────────┬───────────────────┘   │
+│              Web Z sites                 │
 └──────────────────┼───────────────────────┘
                    │ RPC Communication
                    │ (JSON-RPC over HTTP/HTTPS)
@@ -85,7 +85,7 @@ Zclassic is a privacy-focused cryptocurrency that inherits the powerful **zk-SNA
                    ▼
 ┌─────────────────────────────────────────┐
 │      Zclassic Blockchain Network        │
-│  - Global Web Z Sites                   │
+│                                         │
 │  - Z-fi Applications                    │
 │  - Z-Apps & Games                       │
 └─────────────────────────────────────────┘
