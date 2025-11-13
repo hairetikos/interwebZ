@@ -2,6 +2,8 @@
 
 A MetaMask-style Firefox browser extension that connects to your local [Zclassic](https://github.com/ZclassicCommunity/zclassic) full node, enabling seamless interaction with **Web Z** - the decentralized, privacy-focused web powered by the Zclassic blockchain.
 
+THIS PROJECT IS AT INITIAL CONCEPTION STAGE AND IS UNDER CONSTRUCTION LIKE A 2001 GEOCITIES WEBSITE.  IT IS NOT EXPECTED TO WORK JUST YET.
+
 ## 🎯 Concept Overview
 
 **interwebZ** bridges the gap between traditional web browsing and the Zclassic blockchain ecosystem. By connecting directly to a local Zclassic full node via RPC (Remote Procedure Call), the extension empowers users to interact with decentralized applications (Z-apps), participate in privacy-preserving DeFi (Z-fi), play blockchain-based games, and authenticate on Web Z sites - all while maintaining the privacy guarantees provided by Zclassic's advanced cryptographic technology.
