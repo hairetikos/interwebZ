@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ZClassic Wallet</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <div class="header">
+      <img src="../icons/zcl-48.png" alt="ZClassic" class="logo">
+      <h1>ZClassic Wallet</h1>
+      <button id="settingsBtn" class="icon-btn" title="Settings">⚙️</button>
+    </div>
+    
+    <!-- Connection Status -->
+    <div id="connectionStatus" class="status-bar">
+      <span id="statusIndicator" class="indicator">●</span>
+      <span id="statusText">Connecting...</span>
+    </div>
+    
+    <!-- Account Info -->
+    <div id="accountSection" class="section">
+      <div class="account-header">
+        <span class="label">Account</span>
+        <button id="accountMenu" class="menu-btn">⋮</button>
+      </div>
+      
+      <div id="accountAddress" class="address">
+        <span id="addressText">Not connected</span>
+        <button id="copyAddress" class="copy-btn" title="Copy address">📋</button>
+      </div>
+      
+      <div id="accountType" class="account-type">
+        <span class="type-badge transparent">Transparent</span>
+        <button id="switchType" class="switch-btn">Switch to Shielded</button>
+      </div>
+    </div>
+    
+    <!-- Balance -->
+    <div id="balanceSection" class="section">
+      <div class="balance-container">
+        <div class="balance-main">
+          <span class="balance-amount" id="balance">0.00</span>
+          <span class="balance-currency">ZCL</span>
+        </div>
+        <div class="balance-usd" id="balanceUSD">≈ $0.00 USD</div>
+      </div>
+      
+      <div class="balance-details">
+        <div class="balance-item">
+          <span class="label">Transparent:</span>
+          <span id="tBalance">0.00 ZCL</span>
+        </div>
+        <div class="balance-item">
+          <span class="label">Shielded:</span>
+          <span id="zBalance">0.00 ZCL</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Actions -->
+    <div class="actions">
+      <button id="sendBtn" class="action-btn primary">
+        <span class="btn-icon">📤</span>
+        Send
+      </button>
+      <button id="receiveBtn" class="action-btn">
+        <span class="btn-icon">📥</span>
+        Receive
+      </button>
+      <button id="shieldBtn" class="action-btn">
+        <span class="btn-icon">🛡️</span>
+        Shield
+      </button>
+    </div>
+    
+    <!-- Pending Requests -->
+    <div id="pendingSection" class="section" style="display: none;">
+      <h3>Pending Request</h3>
+      <div id="pendingRequest" class="request-box">
+        <div class="request-site">
+          <img id="requestFavicon" class="site-icon" src="" alt="">
+          <span id="requestSite">example.com</span>
+        </div>
+        <div class="request-message" id="requestMessage"></div>
+        <div class="request-actions">
+          <button id="approveBtn" class="btn primary">Approve</button>
+          <button id="rejectBtn" class="btn secondary">Reject</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Recent Activity -->
+    <div id="activitySection" class="section">
+      <h3>Recent Activity</h3>
+      <div id="activityList" class="activity-list">
+        <div class="empty-state">
+          <span class="empty-icon">📭</span>
+          <p>No recent transactions</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <a href="#" id="explorerLink" target="_blank">View on Explorer</a>
+      <span class="version">v1.0.0</span>
+    </div>
+  </div>
+  
+  <!-- Modals -->
+  <div id="sendModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Send ZCL</h2>
+        <button class="close-btn">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>To Address:</label>
+          <input type="text" id="sendAddress" placeholder="t1... or zs1...">
+        </div>
+        <div class="form-group">
+          <label>Amount:</label>
+          <input type="number" id="sendAmount" placeholder="0.00" step="0.00000001">
+          <button id="maxBtn" class="max-btn">MAX</button>
+        </div>
+        <div class="form-group">
+          <label>Memo (optional, shielded only):</label>
+          <textarea id="sendMemo" placeholder="Message..." maxlength="512"></textarea>
+        </div>
+        <div class="fee-estimate">
+          <span>Fee: </span>
+          <span id="feeAmount">~0.0001 ZCL</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="confirmSend" class="btn primary">Send</button>
+        <button class="btn secondary cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
